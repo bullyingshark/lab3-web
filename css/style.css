@@ -276,7 +276,7 @@ menu>div{
   	padding-right: 10px;
 }
 
-/*-------------home page.html--------------*/
+/*-------------home page--------------*/
 .bg-img{
 	height: 94px;
 	padding-left: 33px;
@@ -301,7 +301,7 @@ menu>div{
 
 
 
-/*-------------sponsors.html---------------*/
+/*-------------sponsors---------------*/
 .redirect-text{
 	color: #286086;
 	text-decoration: underline;
@@ -312,7 +312,7 @@ menu>div{
 
 
 
-/*-------------tickets.html---------------*/
+/*-------------tickets---------------*/
 .div-form{
 	padding-top: 30px;
 	padding-left: 40px;
@@ -364,6 +364,8 @@ h3{
 }
 
 #errorMessage{
-	color: red; display: none;
+	color: red; 
+	display: block;
 	margin-top: 15px;
+	margin-left: 35px;
 }

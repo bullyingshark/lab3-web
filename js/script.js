@@ -4,53 +4,13 @@ function redirectToMainPage() {
     var countdownInterval = setInterval(function() {
         if (countdown <= 0) {
             clearInterval(countdownInterval);
-            window.location.href = "lab3.html";
+            window.location.href = "../index.php";
         } else {
             document.getElementById("countdown").innerText = countdown;
             countdown--;
         }
     }, 1000); 
 }
-
-function form(form) {
-    var name = form.name.value;
-    var gender = document.querySelector('input[name="rb"]:checked').value;
-    var day = parseInt(form.dd.value);
-    var month = parseInt(form.mm.value);
-    var year = parseInt(form.yyyy.value);
-
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    var currentMonth = currentDate.getMonth() +1; 
-    var currentDay = currentDate.getDate();
-
-    var errorMessageElement = document.getElementById("errorMessage");
-
-    if (isNaN(day) || isNaN(month) || isNaN(year)) {
-        errorMessageElement.innerText = "Please enter valid numeric values for the date!";
-        errorMessageElement.style.display = "block";
-        return false;
-    }
-
-    errorMessageElement.style.display = "none";
-
-    let age_year = currentYear - year;
-
-    if( (currentMonth < month) || (currentMonth == month) && (currentDay<=day) )
-    {
-        age_year--;
-    }
-
-    if( (gender == "m") && (age_year>=21) || (gender == "f") && (age_year>=18) ) 
-    {
-        return true;
-    }
-
-    errorMessageElement.innerText = "You can't buy a ticket! You're under a certain age!";
-    errorMessageElement.style.display = "block";
-    return false;
-}
-
 
 document.addEventListener("DOMContentLoaded", function() {
     let anim_obj = document.querySelector('.img-ball');
