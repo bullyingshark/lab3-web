@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE players [
+    <!ELEMENT players (player+)>
+    <!ELEMENT categories (category+)>
+    <!ELEMENT category (#PCDATA)>
+    <!ELEMENT players (player+)>
+    <!ELEMENT player (name, category, salary, number, year, image, parameters)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT categoryRef (#PCDATA)> 
+    <!ELEMENT salary (#PCDATA)>
+    <!ELEMENT number (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT image (#PCDATA)>
+    <!ELEMENT parameters (parameter+)>
+    <!ELEMENT parameter (#PCDATA)>
+    <!ATTLIST player number ID #REQUIRED>
+    <!ATTLIST player categoryRef IDREF #REQUIRED>
+    <!ATTLIST category catID ID #REQUIRED>
+]>
+<players>
+    <categories>
+        <category catID="leader">Leader</category>
+        <category catID="defender">Defender</category>
+        <category catID="attack">Attack</category>
+        <category catID="gate">Gate</category>
+    </categories>
+
+    <players>
+        <player number="SN123456" categoryRef="leader">
+            <name>Mike Tayson</name>
+            <category>Leader</category>
+            <salary>5000</salary>
+            <year>2003</year>
+            <image>../img/player1.jpg</image>
+            <parameters>
+                <parameter type="Speed">7</parameter>
+                <parameter type="Strength">6</parameter>
+            </parameters>
+        </player>
+
+        <player number="BA985687" categoryRef="defender">
+            <name>George Nikolas</name>
+            <category>Defender</category>
+            <salary>2500</salary>
+            <year>2001</year>
+            <image>../img/player2.jpg</image>
+            <parameters>
+                <parameter type="Speed">4</parameter>
+                <parameter type="Strength">5.4</parameter>
+            </parameters>
+        </player>
+
+        <player number="KI847684" categoryRef="attack">
+            <name>Alex Plane</name>
+            <category>Attack</category>
+            <salary>3700</salary>
+            <year>1999</year>
+            <image>../img/player3.jpg</image>
+            <parameters>
+                <parameter type="Speed">5.5</parameter>
+                <parameter type="Strength">8</parameter>
+            </parameters>
+        </player>
+
+        <player number="GH233759" categoryRef="gate">
+            <name>Edward Kenway</name>
+            <category>Gate</category>
+            <salary>3900</salary>
+            <year>1993</year>
+            <image>../img/player4.jpg</image>
+            <parameters>
+                <parameter type="Speed">6.7</parameter>
+                <parameter type="Strength">7.1</parameter>
+            </parameters>
+        </player>
+
+        <player number="SN123456" categoryRef="leader">
+            <name>Mike Tayson</name>
+            <category>Leader</category>
+            <salary>5000</salary>
+            <year>2003</year>
+            <image>../img/player5.jpg</image>
+            <parameters>
+                <parameter type="Speed">7</parameter>
+                <parameter type="Strength">6</parameter>
+            </parameters>
+        </player>
+
+        <player number="BA985687" categoryRef="defender">
+            <name>George Nikolas</name>
+            <category>Defender</category>
+            <salary>2500</salary>
+            <year>2001</year>
+            <image>../img/player6.jpg</image>
+            <parameters>
+                <parameter type="Speed">4</parameter>
+                <parameter type="Strength">5.4</parameter>
+            </parameters>
+        </player>
+
+        <player number="KI847684" categoryRef="attack">
+            <name>Alex Plane</name>
+            <category>Attack</category>
+            <salary>3700</salary>
+            <year>1999</year>
+            <image>../img/player7.jpg</image>
+            <parameters>
+                <parameter type="Speed">5.5</parameter>
+                <parameter type="Strength">8</parameter>
+            </parameters>
+        </player>
+
+        <player number="GH233759" categoryRef="gate">
+            <name>Edward Kenway</name>
+            <category>Gate</category>
+            <salary>3900</salary>
+            <year>1993</year>
+            <image>../img/player8.jpg</image>
+            <parameters>
+                <parameter type="Speed">6.7</parameter>
+                <parameter type="Strength">7.1</parameter>
+            </parameters>
+        </player>
+
+        <player number="SN123456" categoryRef="leader">
+            <name>Mike Tayson</name>
+            <category>Leader</category>
+            <salary>5000</salary>
+            <year>2003</year>
+            <image>../img/player9.jpg</image>
+            <parameters>
+                <parameter type="Speed">7</parameter>
+                <parameter type="Strength">6</parameter>
+            </parameters>
+        </player>
+
+        <player number="BA985687" categoryRef="defender">
+            <name>George Nikolas</name>
+            <category>Defender</category>
+            <salary>2500</salary>
+            <year>2001</year>
+            <image>../img/player10.jpg</image>
+            <parameters>
+                <parameter type="Speed">4</parameter>
+                <parameter type="Strength">5.4</parameter>
+            </parameters>
+        </player>
+
+    </players>
+</players>
